@@ -5,54 +5,61 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator</title>
-    <link rel="stylesheet" href="style.css"> <!-- Add this line -->
+    <!-- Link to external CSS file for styling -->
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+   <!-- Calculator container -->
    <div class="container">
+    <!-- Display input for calculator result -->
     <input type="text" placeholder="0" id="result">
 
+    <!-- Row 1: Clear, Delete, Percentage, Divide -->
     <div>
-        <button class="operators" onclick="clearResult()">AC</button>
-        <button class="operators" onclick="deleteResult()">DEL</button>
-        <button class="operators" onclick="insertValue('%')">%</button>
-        <button class="operators" onclick="insertValue('/')">/</button>
+        <button class="operators" onclick="clearResult()">AC</button> <!-- All Clear button -->
+        <button class="operators" onclick="deleteResult()">DEL</button> <!-- Delete last character -->
+        <button class="operators" onclick="insertValue('%')">%</button> <!-- Percentage button -->
+        <button class="operators" onclick="insertValue('/')">/</button> <!-- Division button -->
     </div>
+    <!-- Row 2: Square Root, Memory Add, Memory Subtract, Memory Clear -->
     <div>
-        <button class="operators" onclick="squareRoot()">√</button>
-        <button class="operators" onclick="memoryAdd()">M+</button>
-        <button class="operators" onclick="memorySubtract()">M-</button>
-        <button class="operators" onclick="memoryClear()">MC</button>
+        <button class="operators" onclick="squareRoot()">√</button> <!-- Square root button -->
+        <button class="operators" onclick="memoryAdd()">M+</button> <!-- Memory add button -->
+        <button class="operators" onclick="memorySubtract()">M-</button> <!-- Memory subtract button -->
+        <button class="operators" onclick="memoryClear()">MC</button> <!-- Memory clear button -->
     </div>
+    <!-- Row 3: 7, 8, 9, Multiply -->
     <div>
-        <button onclick="insertValue('7')">7</button>
-        <button onclick="insertValue('8')">8</button>
-        <button onclick="insertValue('9')">9</button>
-        <button class="operators" onclick="insertValue('*')">*</button>
+        <button onclick="insertValue('7')">7</button> <!-- Number 7 -->
+        <button onclick="insertValue('8')">8</button> <!-- Number 8 -->
+        <button onclick="insertValue('9')">9</button> <!-- Number 9 -->
+        <button class="operators" onclick="insertValue('*')">*</button> <!-- Multiplication button -->
     </div>
+    <!-- Row 4: 4, 5, 6, Subtract -->
     <div>
-        <button onclick="insertValue('4')">4</button>
-        <button onclick="insertValue('5')">5</button>
-        <button onclick="insertValue('6')">6</button>
-        <button class="operators" onclick="insertValue('-')">-</button>
+        <button onclick="insertValue('4')">4</button> <!-- Number 4 -->
+        <button onclick="insertValue('5')">5</button> <!-- Number 5 -->
+        <button onclick="insertValue('6')">6</button> <!-- Number 6 -->
+        <button class="operators" onclick="insertValue('-')">-</button> <!-- Subtraction button -->
     </div>
+    <!-- Row 5: 1, 2, 3, Add -->
     <div>
-        <button onclick="insertValue('1')">1</button>
-        <button onclick="insertValue('2')">2</button>
-        <button onclick="insertValue('3')">3</button>
-        <button class="operators" onclick="insertValue('+')">+</button>
+        <button onclick="insertValue('1')">1</button> <!-- Number 1 -->
+        <button onclick="insertValue('2')">2</button> <!-- Number 2 -->
+        <button onclick="insertValue('3')">3</button> <!-- Number 3 -->
+        <button class="operators" onclick="insertValue('+')">+</button> <!-- Addition button -->
     </div>
+    <!-- Row 6: 00, 0, Decimal, Equals -->
     <div>
-        <button onclick="insertValue('00')">00</button>
-        <button onclick="insertValue('0')">0</button>
-        <button onclick="insertValue('.')">.</button>
-        <button class="eq" onclick="calculate()">=</button>
+        <button onclick="insertValue('00')">00</button> <!-- Double zero button -->
+        <button onclick="insertValue('0')">0</button> <!-- Number 0 -->
+        <button onclick="insertValue('.')">.</button> <!-- Decimal point button -->
+        <button class="eq" onclick="calculate()">=</button> <!-- Equals button -->
     </div>
    </div>
 </div>
+    <!-- Link to external JavaScript file for calculator functionality -->
     <script src="script.js"></script>
 </body>
 </html>
-
-   
-   
